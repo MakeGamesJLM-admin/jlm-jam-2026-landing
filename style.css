@@ -208,7 +208,7 @@ html[dir="rtl"] .cta::after { content: " ←"; }
 }
 
 /* ---------- sections ---------- */
-.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 1040px; margin-inline: auto; padding: 0 20px; }
 section + section { margin-top: clamp(56px, 8vw, 96px); }
 
 .intro { text-align: center; max-width: 760px; }
@@ -357,4 +357,67 @@ section + section { margin-top: clamp(56px, 8vw, 96px); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
+}
+
+/* ---------- landing copy additions ---------- */
+.hero-headline {
+  position: relative; z-index: 1;
+  margin: clamp(22px, 3.4vw, 36px) 0 8px;
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+.hero-sub {
+  position: relative; z-index: 1;
+  max-width: 620px;
+  margin: 0 auto 26px;
+  font-size: clamp(18px, 2.2vw, 21px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 28px;
+}
+.why-item { text-align: center; padding: 8px 12px; }
+.why-item img { height: 92px; width: auto; margin: 0 auto 14px; }
+.why-item h3 { margin: 0 0 6px; font-size: 22px; font-weight: 800; line-height: 1.25; }
+.why-item p { margin: 0; }
+
+.sticky-cta {
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%, 160%);
+  padding: 12px 26px;
+  border: 3px solid var(--plum);
+  border-radius: 999px;
+  background: var(--peach);
+  color: var(--plum);
+  font-weight: 900;
+  font-size: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 var(--plum);
+  transition: transform .25s ease;
+}
+.sticky-cta.show { transform: translate(-50%, 0); }
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 900px) {
+  .why-grid { gap: 18px; }
+  .why-item {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    column-gap: 16px;
+    text-align: start;
+    padding: 0;
+  }
+  .why-item img { grid-row: span 2; height: auto; width: 76px; margin: 4px 0 0; }
 }
