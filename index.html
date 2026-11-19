@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JLM JAM 2026 · Hanukkah Game Jam</title>
+<meta name="description" content="The Hanukkah Game Jam is back! 48 hours of making games at Hansen House, Jerusalem. Dec 8–10, 2026. Free — spots are limited.">
+<meta property="og:title" content="JLM JAM 2026 · Hanukkah Game Jam">
+<meta property="og:description" content="48 hours of making games at Hansen House, Jerusalem. Dec 8–10, 2026. Free — spots are limited.">
+<meta property="og:image" content="https://makegamesjlm-admin.github.io/jlm-jam-2026-landing/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#CFFBF8">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Pick language before paint: ?lang= → saved choice → browser language
+  (function () {
+    var l = new URLSearchParams(location.search).get('lang');
+    if (l !== 'he' && l !== 'en') { try { l = localStorage.getItem('jam-lang'); } catch (e) {} }
+    if (l !== 'he' && l !== 'en') l = /^he|^iw/i.test(navigator.language || '') ? 'he' : 'en';
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === 'he' ? 'rtl' : 'ltr';
+  })();
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="https://makegamesjlm.com/" aria-label="MakeGamesJLM">
+    <img src="assets/logo.png" alt="MakeGamesJLM" width="262" height="178">
+  </a>
+  <div class="lang-toggle" role="group" aria-label="Language / שפה">
+    <button type="button" data-set-lang="en" aria-label="English">EN</button>
+    <button type="button" data-set-lang="he" aria-label="עברית">עב</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="decor" aria-hidden="true">
+      <img class="d d-handheld" src="assets/device_handheld.png" alt="">
+      <img class="d d-disc" src="assets/device_disc.png" alt="">
+      <img class="d d-clamshell" src="assets/device_clamshell.png" alt="">
+      <img class="d d-remote" src="assets/device_remote.png" alt="">
+      <img class="s s1" src="assets/sym_circle_tl.png" alt="">
+      <img class="s s2" src="assets/sym_cross.png" alt="">
+      <img class="s s3" src="assets/sym_square_top.png" alt="">
+      <img class="s s4" src="assets/sym_circle_tr.png" alt="">
+      <img class="s s5" src="assets/sym_triangle_tr.png" alt="">
+      <img class="s s6" src="assets/sym_square_mid.png" alt="">
+      <img class="s s7" src="assets/sym_triangle_bm.png" alt="">
+      <img class="s s8" src="assets/sym_square_bl.png" alt="">
+      <img class="s s9" src="assets/sym_circle_br.png" alt="">
+    </div>
+
+    <h1 class="title" dir="ltr">
+      <span class="sr-only">JLM JAM — Hanukkah 2026</span>
+      <img class="panel" src="assets/title_panel.png" alt="">
+      <img class="t t-j" src="assets/title_jlm_J.png" alt="">
+      <img class="t t-l" src="assets/title_jlm_L.png" alt="">
+      <img class="t t-m" src="assets/title_jlm_M.png" alt="">
+      <img class="t t-jam" src="assets/title_jam.png" alt="">
+      <img class="sub-line sub-l" src="assets/subtitle_line_l.png" alt="">
+      <img class="sub-line sub-r" src="assets/subtitle_line_r.png" alt="">
+      <img class="sub-text en" src="assets/subtitle_text.png" alt="">
+      <span class="sub-text-he he" aria-hidden="true">חנוכה 2026</span>
+    </h1>
+
+    <div class="info-row">
+      <span class="info"><img src="assets/info_date_icon.png" alt=""><span class="en">Dec 8–10</span><span class="he">8–10 בדצמבר</span></span>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="info"><img src="assets/info_location_icon.png" alt=""><span class="en">Hansen House</span><span class="he">בית הנסן</span></span>
+    </div>
+
+    <p class="tagline">
+      <span class="en">Ever wanted to make a game?</span>
+      <span class="he">תמיד רציתם ליצור משחק?</span>
+    </p>
+
+    <a class="cta" href="https://forms.gle/fbEMRiPKKkjxS4aTA" target="_blank" rel="noopener">
+      <span class="en">Register now — it's free!</span>
+      <span class="he">להרשמה — ההשתתפות בחינם!</span>
+    </a>
+    <p class="cta-note">
+      <span class="en">Spots are limited</span>
+      <span class="he">מספר המקומות מוגבל</span>
+    </p>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro wrap">
+    <p class="lead">
+      <span class="en">The Hanukkah Game Jam is back! 48 hours of making games, meeting fellow creators, and turning ideas into playable games — all at Hansen House!</span>
+      <span class="he">ג׳אם חנוכה חוזר! 48 שעות של יצירת משחקים, היכרות עם יוצרים אחרים, והפיכת רעיונות למשחקים שאפשר לשחק בהם — והכול בבית הנסן!</span>
+    </p>
+    <p>
+      <span class="en"><strong>Your first time?</strong> With the new tools available today, it's easier than ever to get started. And most importantly — you're not alone! The community is here to help and offer advice when you get stuck.</span>
+      <span class="he"><strong>פעם ראשונה שלכם?</strong> עם הכלים החדשים שזמינים היום, קל מתמיד להתחיל. והכי חשוב — אתם לא לבד! הקהילה כאן כדי לעזור ולייעץ כשנתקעים.</span>
+    </p>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details wrap">
+    <article class="card">
+      <img class="card-icon" src="assets/info_date_icon.png" alt="">
+      <h2><span class="en">When?</span><span class="he">מתי?</span></h2>
+      <p>
+        <span class="en">We kick off on <strong>Tuesday, December 8</strong>, the fifth night of Hanukkah, at <strong>18:30</strong>. The jam runs for 48 hours, until <strong>Thursday, December 10, at 18:30</strong>.</span>
+        <span class="he">מתחילים ב<strong>יום שלישי, 8.12</strong>, נר חמישי של חנוכה, בשעה <strong>18:30</strong>. הג׳אם נמשך 48 שעות, עד <strong>יום חמישי, 10.12, בשעה 18:30</strong>.</span>
+      </p>
+      <a class="card-link" target="_blank" rel="noopener"
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=JLM%20JAM%202026%20%E2%80%93%20Hanukkah%20Game%20Jam&amp;dates=20261208T183000/20261210T183000&amp;ctz=Asia/Jerusalem&amp;location=Hansen%20House%2C%2014%20Gedalyahu%20Alon%20St.%2C%20Jerusalem&amp;details=https%3A%2F%2Fmakegamesjlm.com%2Fjam">
+        <span class="en">Add to calendar</span><span class="he">הוספה ליומן</span>
+      </a>
+    </article>
+    <article class="card">
+      <img class="card-icon" src="assets/info_location_icon.png" alt="">
+      <h2><span class="en">Where?</span><span class="he">איפה?</span></h2>
+      <p>
+        <span class="en"><strong>Hansen House</strong><br>14 Gedalyahu Alon St., Jerusalem</span>
+        <span class="he"><strong>בית הנסן</strong><br>גדליהו אלון 14, ירושלים</span>
+      </p>
+      <a class="card-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Hansen%20House%2C%2014%20Gedalyahu%20Alon%20St%2C%20Jerusalem">
+        <span class="en">Open in maps</span><span class="he">פתיחה במפה</span>
+      </a>
+    </article>
+    <article class="card">
+      <img class="card-icon" src="assets/sym_triangle_tr.png" alt="">
+      <h2><span class="en">How much?</span><span class="he">כמה זה עולה?</span></h2>
+      <p>
+        <span class="en">Participation is <strong>FREE!</strong> Spots are limited — register early.</span>
+        <span class="he">ההשתתפות <strong>בחינם!</strong> מספר המקומות מוגבל — כדאי להירשם מוקדם.</span>
+      </p>
+      <a class="card-link" href="https://forms.gle/fbEMRiPKKkjxS4aTA" target="_blank" rel="noopener">
+        <span class="en">Register here</span><span class="he">נרשמים כאן</span>
+      </a>
+    </article>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how wrap">
+    <h2 class="section-title">
+      <span class="en">What happens at a game jam?</span>
+      <span class="he">מה עושים בגיים ג׳אם?</span>
+    </h2>
+    <p class="section-sub">
+      <span class="en">Like a hackathon, but for games!</span>
+      <span class="he">כמו האקתון, רק למשחקים!</span>
+    </p>
+    <ol class="steps">
+      <li>
+        <img src="assets/sym_circle_tl.png" alt="">
+        <h3><span class="en">Secret theme</span><span class="he">הנושא הסודי</span></h3>
+        <p><span class="en">We start by revealing the secret theme.</span><span class="he">מתחילים בחשיפת הנושא הסודי.</span></p>
+      </li>
+      <li>
+        <img src="assets/sym_triangle_bm.png" alt="">
+        <h3><span class="en">Brainstorm &amp; teams</span><span class="he">סיעור מוחות וצוותים</span></h3>
+        <p><span class="en">Then we brainstorm and form teams.</span><span class="he">ממשיכים לסיעור מוחות והקמת צוותים.</span></p>
+      </li>
+      <li>
+        <img src="assets/sym_square_top.png" alt="">
+        <h3><span class="en">48 hours</span><span class="he">48 שעות</span></h3>
+        <p><span class="en">And we're off — 48 hours to make a game from scratch, with mentors around to help teams.</span><span class="he">ויוצאים לדרך — 48 שעות ליצור משחק מאפס, עם מנטורים שיעזרו לצוותים.</span></p>
+      </li>
+      <li>
+        <img src="assets/sym_cross.png" alt="">
+        <h3><span class="en">Show &amp; play</span><span class="he">מציגים ומשחקים</span></h3>
+        <p><span class="en">At the end, we'll show off the games and play them together!</span><span class="he">בסיום נציג את המשחקים ונשחק בהם יחד!</span></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq wrap">
+    <h2 class="section-title">
+      <span class="en">Things to know</span>
+      <span class="he">דברים שכדאי לדעת</span>
+    </h2>
+    <div class="faq-grid">
+      <div class="qa">
+        <img class="qa-icon" src="assets/device_handheld.png" alt="">
+        <h3><span class="en">Who can participate?</span><span class="he">מי יכול להשתתף?</span></h3>
+        <p><span class="en">Programmers, designers, writers, musicians, and anyone curious about making games. Beginners and experienced creators alike — everyone is welcome!</span><span class="he">מתכנתים, מעצבים, כותבים, מוזיקאים וכל מי שסקרן להתנסות ביצירת משחקים. מתחילים ומנוסים כאחד — כולם מוזמנים!</span></p>
+      </div>
+      <div class="qa">
+        <img class="qa-icon" src="assets/device_clamshell.png" alt="">
+        <h3><span class="en">Coming without a team?</span><span class="he">מגיעים בלי צוות?</span></h3>
+        <p><span class="en">No problem! We'll set aside time at the beginning to meet people and form teams.</span><span class="he">אין בעיה! בתחילת הג׳אם יוקדש זמן להיכרות וליצירת צוותים.</span></p>
+      </div>
+      <div class="qa">
+        <img class="qa-icon" src="assets/device_disc.png" alt="">
+        <h3><span class="en">What should I bring?</span><span class="he">מה להביא?</span></h3>
+        <p><span class="en">A laptop, charger, and any equipment you want to work with. We recommend installing and updating your software in advance.</span><span class="he">מחשב נייד, מטען וכל ציוד שתרצו לעבוד איתו. מומלץ להתקין ולעדכן תוכנות מראש.</span></p>
+      </div>
+      <div class="qa">
+        <img class="qa-icon" src="assets/device_remote.png" alt="">
+        <h3><span class="en">Do I need to stay for all 48 hours?</span><span class="he">חייבים להישאר כל 48 השעות?</span></h3>
+        <p><span class="en">Not at all. You can take breaks and go home to rest, but we recommend being there for the kickoff and final game presentations.</span><span class="he">ממש לא. אפשר לקחת הפסקות ולצאת לנוח, אבל כדאי להיות איתנו בפתיחה ובהצגת המשחקים בסיום.</span></p>
+      </div>
+      <div class="qa">
+        <img class="qa-icon qa-sym" src="assets/sym_circle_br.png" alt="">
+        <h3><span class="en">Can I sleep at Hansen House?</span><span class="he">אפשר לישון בבית הנסן?</span></h3>
+        <p><span class="en">Yes! There'll be a dedicated darkened area with bean bags. We recommend bringing a sleeping bag.</span><span class="he">כן! יהיה מקום ייעודי עם פופים וחושך. מומלץ להביא שק שינה.</span></p>
+      </div>
+      <div class="qa">
+        <img class="qa-icon qa-sym" src="assets/sym_square_bl.png" alt="">
+        <h3><span class="en">Got a question?</span><span class="he">יש שאלות?</span></h3>
+        <p><span class="en">Write to us at <a href="mailto:makegamesjlm@gmail.com">makegamesjlm@gmail.com</a>. The full schedule and more details will be announced soon.</span><span class="he">אפשר לכתוב לנו ב־<a href="mailto:makegamesjlm@gmail.com">makegamesjlm@gmail.com</a>. לו״ז מלא ופרטים נוספים יתפרסמו בקרוב.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section class="closing wrap">
+    <h2 class="section-title">
+      <span class="en">See you at Hansen House!</span>
+      <span class="he">נתראה בבית הנסן!</span>
+    </h2>
+    <a class="cta" href="https://forms.gle/fbEMRiPKKkjxS4aTA" target="_blank" rel="noopener">
+      <span class="en">Register for JLM JAM 2026</span>
+      <span class="he">להרשמה ל־<bdi dir="ltr">JLM JAM 2026</bdi></span>
+    </a>
+    <p class="about">
+      <span class="en">The jam is organized by <a href="https://makegamesjlm.com/">MakeGamesJLM</a>, Jerusalem's game development community, bringing creators together to learn, collaborate, and make games since 2019.</span>
+      <span class="he">הג׳אם מאורגן על ידי <a href="https://makegamesjlm.com/">MakeGamesJLM</a>, קהילת יוצרי המשחקים הירושלמית, שמפגישה בין יוצרים ללמידה, שיתוף פעולה ויצירת משחקים מאז 2019.</span>
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <img class="skyline" src="assets/skyline.png" alt="" aria-hidden="true">
+  <div class="footer-bar">
+    <a href="https://makegamesjlm.com/">makegamesjlm.com</a>
+    <span aria-hidden="true">·</span>
+    <a href="mailto:makegamesjlm@gmail.com">makegamesjlm@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var titles = {
+      en: 'JLM JAM 2026 · Hanukkah Game Jam',
+      he: 'JLM JAM 2026 · ג׳אם חנוכה'
+    };
+    function apply(l) {
+      root.lang = l;
+      root.dir = l === 'he' ? 'rtl' : 'ltr';
+      document.title = titles[l];
+      document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === l));
+      });
+    }
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var l = b.getAttribute('data-set-lang');
+        try { localStorage.setItem('jam-lang', l); } catch (e) {}
+        apply(l);
+      });
+    });
+    apply(root.lang === 'he' ? 'he' : 'en');
+  })();
+</script>
+</body>
+</html>
